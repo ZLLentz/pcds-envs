@@ -1,6 +1,6 @@
 # conda as new as possible
 ads-async>=0.3.1
-anaconda-client>=1.11.3
+anaconda-client>=1.12.0
 apischema>=0.18.0
 archapp>=1.1.0
 atlassian-python-api>=3.39.0
@@ -14,7 +14,7 @@ botorch
 caproto>=1.1.0
 coloredlogs
 conda-pack>=0.7.0
-conda-smithy>=3.24.0
+conda-smithy>=3.24.1
 cookiecutter>=2.1.1
 coverage>=7.2.7
 cython>=0.29.34
@@ -26,15 +26,15 @@ flask>=2.3.2
 fzf>=0.42.0
 gammaray>=2.11.2
 gdb>=12.1
-gh>=2.25.1
+gh>=2.32.1
 gpytorch
 grpcio-tools
 h5py
 happi>=2.3.0
 hklpy>=1.0.3
 holoviews>=1.10.9
-hutch-python>=1.18.3
-hxrsnd>=0.2.11
+hutch-python>=1.18.4
+hxrsnd>=0.3.1
 isort>=5.12.0
 jupyter
 krtc>=0.2.1
@@ -43,8 +43,8 @@ lucid>=0.10.0
 lxml
 memray>=1.8.1
 mysqlclient
-nabs>=1.5.3
-numpy>=1.14
+nabs>=1.5.4
+numpy>=1.22
 opencv
 pandas
 panel
@@ -65,11 +65,12 @@ psdm_qs_cli>=0.3.6
 pswalker>=1.0.8
 pyaudio
 pyca>=3.2.0
-pycln>=2.1.5
-pydm>=1.19.1
+pycln>=2.1.6
+pydm>=1.20.0
 pyepics>=3.5.0
 pyfiglet
 pymongo
+pyqt>=5
 py-spy>=0.3.14
 pytables
 pytest>=7.4.0
@@ -90,6 +91,8 @@ scipy
 seaborn
 shellcheck>=0.9.0
 simplejson
+sphinx
+sphinx_rtd_theme>=1.2.2
 spyder-kernels
 suitcase-csv
 suitcase-json-metadata
@@ -109,8 +112,6 @@ yarn
 # conda only regressive pins
 # line_profiler is brokenly slow starting at 4
 line_profiler<4
-# pyqt 5.15 builds have no designer
-pyqt=5.12.3
 # workaround for conda/pip interaction bug with whatrecord
 python-graphviz<0.18
 # conda+pip regressive pins
@@ -124,6 +125,3 @@ ipython=8.4.0
 ophyd=1.7.0
 # pin for gui interface stability
 qtpy=2.1.0
-# sphinx 7.0.0 incompatible with rtd theme at 1.2.0, temporarily pin both
-sphinx<7
-sphinx_rtd_theme=1.2.0
